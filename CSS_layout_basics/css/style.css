@@ -1,4 +1,4 @@
-/* ================================= 
+/* =================================
   Base Styles
 ==================================== */
 
@@ -50,6 +50,13 @@ a {
     margin-bottom: 6px;
 }
 
+.name a,
+.main-nav a {
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+}
+
 .main-nav a {
     font-size: .95em;
     color: #3acec2;
@@ -58,12 +65,6 @@ a {
 
 .main-nav a:hover {
     color: #093a58;
-}
-
-.name a,
-.main-nav a {
-    padding: 10px 15px;
-    display: block;
 }
 
 /* ---- Layout Containers ---- */
@@ -90,43 +91,62 @@ a {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 789px) {
 
     .wrap {
         min-height: calc(100vh - 89px);
     }
 
     .container {
-        width: 80%;
+        width: 85%;
         max-width: 1150px;
         margin: 0 auto;
     }
 
+    .main-nav {
+        float: right;
+    }
+
     .name,
-    .main-nav,
     .main-nav li {
-        display: inline-block;
-    }
-
-    .name {
-        width: 240px;
-        margin-right: 50px;
+        float: left;
     }
 
     .main-nav li {
-        margin-right: 12px;
+        margin-left: 12px;
     }
+
+    /* ---- Columns ---- */
 
     .col{
-        display: inline-block;
-        width: 50%;
-        margin-right: -4px;
-        vertical-align: top;
+        float: left;
         padding-left: 1em;
         padding-right: 1em;
     }
+
+    .primary{
+        width: 60%;
+    }
+
+    .secondary{
+        width: 40%;
+    }
+    /* ------------- */
+
+    .feat-img {
+        width: 300px;
+        float: left;
+        margin-top: 5px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+        padding: 10px;
+        border: solid 1px #d9e4ea;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
 }
-
-
-
-
