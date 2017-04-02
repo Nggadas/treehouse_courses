@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Nggadas</title>
+    <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container clearfix">
+            <h1 class="name"><a href="#">Emmanuel Nggadas</a></h1>
+            <ul class="main-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact_form">Contact Me</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Home-->
+    <div id="home"  class="container clearfix">
+
+        <p class="intro">Hi, my name is Emmanuel. I am a web developer. Below are some of the services I provide.</p>
+
+        <div class="primary col">
+            <figure>
+                <img src="assets/images/web_design.jpg" alt="Vector" class="image" >
+                <figcaption>
+                    <h2>Web Design</h2>
+                    I design websites to match the type content that the site will display, this allows space for creativity. I usually
+                    work with moqups.
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="secondary col">
+            <figure>
+                <img src="assets/images/web_dev.jpg" alt="image">
+                <figcaption>
+                    <h2>Responsive Front-end Development</h2>
+                    A responsive design means your website will be compatible with all devices. I work with HTML, CSS and JavaScript for an interactive experience.
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="tertiary col">
+            <figure>
+                <img src="assets/images/app_dev.jpg" alt="image">
+                <figcaption>
+                    <h2>Web Applications</h2>
+                    I also specialise in Web applications like e-commerce, blog and content management systems(CMS).
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!--Portfolio-->
+    <div id="portfolio"  class="container clearfix">
+
+        <h1>Portfolio</h1>
+        <div class="aida portfolio_div col">
+            <div class="hover_content">
+                <h4>Demonstration project</h4>
+                <p>HTML<br>
+                    CSS<br>
+                    JQuery<br>
+                    PHP<br>
+                </p>
+                <button onclick="number1()" id="aida">View</button>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="aida1" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Demonstration Project</h2>
+                <p>HTML | CSS | JQuery | PHP</p>
+                <h3>About</h3>
+                <p>This website was a school assessment project that demonstrated some of the skills I had acquired during
+                    my time at Leeds Beckett University. It covers lots of topics e.g. Interface frameworks, PHP based forms,
+                    angularJS, Object Oriented Programming e.t.c</p>
+                <form action="http://c7157215.herokuapp.com/" target="_blank">
+                    <button>View Website</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="memo portfolio_div col">
+            <div class="hover_content">
+                <h4>MVC Project</h4>
+                <p>HTML<br>
+                    CSS<br>
+                    Rails<br>
+                    Foundation<br>
+                </p>
+                <button onclick="number2()" id="memo">View</button>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="memo1" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Demonstration project</h2>
+                <p>HTML | CSS | Rails | Foundation</p>
+                <h3>About</h3>
+                <p>This website was a school assessment project that demonstrated my knowledge of the rails MVC Framework,
+                    It is a site for creating and storing memos/notes. I built it using the rails framework and foundation
+                responsive framework.</p>
+                <form action="http://aida-memos.herokuapp.com/" target="_blank">
+                    <button>View Website</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="messi portfolio_div col">
+            <div class="hover_content">
+                <h4>First Website</h4>
+                <p>HTML<br>
+                    CSS<br>
+                </p>
+                <button onclick="number3()" id="messi">View</button>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="messi1" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Demonstration project</h2>
+                <p>HTML | CSS</p>
+                <h3>About</h3>
+                <p>This website was a school assessment project and is the first website I ever built.
+                    It is a static website built on HtML and CSS.</p>
+                <form action="#" target="_blank">
+                    <button>View Website</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!--About me-->
+    <div id="about" class="container clearfix">
+
+        <h1>About Me</h1>
+        <img class="profile_pic" src="assets/images/profile_pic.jpg" alt="profile picture">
+        <p>I am a Computing student at Leeds Beckett university in my final year. During the course of my time here, I
+            have gained some knowledge and skills in web development and desktop app development as well as networking,
+            systems modelling and computer security.</p>
+        <div class="skills">
+            <h3>Programming languages I work with include: </h3>
+            <!--Skills-->
+            <ul>
+                <li>Front-end Development
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>Back-end Development
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>Ruby on Rails</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>Desktop-app Development
+                    <ul>
+                        <li>Java</li>
+                        <li>C&#35;</li>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
+                    </ul>
+                </li>
+            </ul>￼￼￼￼￼￼
+        </div>
+    </div>
+
+    <!--Contact form-->
+    <div id="contact_form" class="container">
+
+        <form action="index.html" method="post">
+            <h1>Contact me</h1>
+
+            <fieldset>
+                <legend><span class="number">1</span>Your Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" placeholder="e.g. Emmanuel Nggadas" required>
+
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" placeholder="e.g. email@example.com" required>
+
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website" placeholder="e.g. website.com">
+            </fieldset>
+
+            <fieldset>
+                <legend><span class="number">2</span>Your message</legend>
+                <label for="name">Topic:</label>
+                <input type="text" id="topic" name="topic" placeholder="e.g. build a website" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" rows="10"></textarea>
+            </fieldset>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <footer class="main-footer">
+        <a href="https://www.linkedin.com/in/emmanuel-nggadas-381841b8/" target="_blank"><img class="link" src="assets/images/linkedin.png" alt=""></a>
+        <a href="https://www.facebook.com/emmanuel.nggadas" target="_blank"><img class="link" src="assets/images/facebook.png" alt=""></a>
+        <a href="https://twitter.com/enggadas70" target="_blank"><img class="link" src="assets/images/twitter.png" alt=""></a><br>
+        <span>&copy;2017 Emmanuel Nggadas.</span>
+    </footer>
+</body>
+</html>

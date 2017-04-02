@@ -72,24 +72,25 @@ figcaption {
 
 .main-nav {
 	margin-top: 5px;
+	margin-bottom: 10px;
 }
 
-	.name a,
-	.main-nav a {
-		display: block;
-		text-align: center;
-		padding: 10px 15px;
-	}
-	
-	.main-nav a {
-		font-size: .95em;
-		color: #3acec2;
-		text-transform: uppercase;
-	}
+.name a,
+.main-nav a {
+	display: block;
+	text-align: center;
+	padding: 10px 15px;
+}
 
-	.main-nav a:hover {
-		color: #093a58;
-	}
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
 
 /* ---- Layout Containers ---- */
 
